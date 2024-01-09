@@ -354,7 +354,6 @@ const ProductList=()=>{
                     <li>{item.company}</li>
                     </ul>
                     <div className="product-buttons">
-                       <Link to={"/update/" + item._id}><a className="super-button">Update</a></Link>
                         <button className="super-button" onClick={()=>{addToCart(item._id);
                                                                         deleteProduct(item._id)
                         }}>Buy</button>
