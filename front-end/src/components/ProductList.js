@@ -73,7 +73,7 @@ const ProductList=()=>{
 
     let interM = []; // Initialiser l'array vide puis le remplir comme ça permet de ne pas faire appel aux mêmes cases mémoires et changer productsInter à chaque fois
 
-    if(priceMore > 0){
+    if(priceMore > 0 || priceLess > 0){
             // En récupérant directement tous les produits puis en effectuant un filtre d'array sur le prix désiré, c'est plus pratique.
         let triadou = allProducts.filter((product) => product.price > priceMore);
         for(let i=0; i<triadou.length;i++)
