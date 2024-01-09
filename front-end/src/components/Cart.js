@@ -68,7 +68,7 @@ const Cart=()=> {
         let price = item.price;
         let condition = item.condition;
         let company = item.company;
-        let result = await fetch("http://localhost:5000/add-product",{ 
+        let result = await fetch("https://uuu-3fwk.onrender.com/add-product",{ 
             method:"post",
             body:JSON.stringify({name, price, condition, company}),
             headers: {
