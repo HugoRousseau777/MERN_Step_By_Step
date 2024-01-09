@@ -285,7 +285,7 @@ const ProductList=()=>{
             
             setPriceLess(key);
             for(let i=0; i< interM.length;i++){
-                if( interM[i].price < key){
+                if( interM[i].price > key){
                     delete interM[i];
                 }
             }
